@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">LiftOff</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="graph.html">Forecast</a></li>
+        <li class="active"><a href="page.html">Current </a></li> 
+        
+      </ul>
+    </div>
+  </nav>
+    <div class="container">
+        <div class="well">
+            <div class="row d1">
+                <div class="col-sm-4 col-md-offset-4">
+                    <div class="row">
+                        <label class="col" for="usr">City:</label>
+                        <input type="text" class="col" id="city"  required />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <button type="button" id ="b1" class="btn btn-default">Get Temperature</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-sm-4 col-md-offset-4">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Min Temp</th>
+                            <th>Max Temp</th>
+                            <th>Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td id="max_temp"></td>
+                            <td id="min_temp"></td>
+                            <td id="time"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
