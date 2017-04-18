@@ -1,4 +1,4 @@
-var ip = "http://192.168.1.10:3000/city/"; //to be changed for your application
+var ip = window.location.origin+"/city/"; //to be changed for your application
 $(document).ready(function(){
     $("#b1").click(function(){
     	if ($("#city").val().trim()) {
